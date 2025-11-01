@@ -1,27 +1,28 @@
 {
-   "compilerOptions": {
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "nodenext",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "lib": ["ESNext"],
 
-      "target": "esnext",
-      "module": "nodenext",
-      "esModuleInterop": true,
-      "skipLibCheck": true,
-      "lib": ["ESNext"],
+    /* strictness */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
 
-      /* strictness */
-      "strict": true,
-      "noUncheckedIndexedAccess": true,
+    /*  */
+    "rootDir": "src",
+    "outDir": "dist",
 
-      /*  */
-      "rootDir": "src",
-      "outDir": "dist",
-
-      /* path aliases */
-      "baseUrl": ".",
-      "paths": {
-         "@/*": ["src/*"],
-         "@modules/*": ["src/modules/*"],
-      }
-   },
-   "include": ["src/**/*"],
-   "exclude": ["node_modules", "**/*.test.ts"]
+    /* path aliases */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@config/*": ["src/config/*"],
+      "@modules/*": ["src/modules/*"],
+      "@server/*": ["src/server/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.test.ts"]
 }

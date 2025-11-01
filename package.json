@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tsnd --respawn --clear -r tsconfig-paths/register src/index.ts",
+    "dev": "tsnd --respawn --clear -r tsconfig-paths/register --env-file=.env src/index.ts",
     "build": "rimraf dist && tsc && tsc-alias",
     "start": "npm build && node src/index.js",
     "test": "vitest"
@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "env-var": "^7.5.0",
     "express": "^5.1.0"
   }
 }

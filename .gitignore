@@ -1,0 +1,17 @@
+# OS files
+.DS_Store
+Thumbs.db
+.desktop
+
+node_modules/
+.vscode/
+
+# enviroment
+.env
+.env.*
+
+# Vitest cache
+.vitest/
+
+# prettier
+.prettierrc

@@ -1,0 +1,27 @@
+{
+   "compilerOptions": {
+
+      "target": "esnext",
+      "module": "nodenext",
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "lib": ["ESNext"],
+
+      /* strictness */
+      "strict": true,
+      "noUncheckedIndexedAccess": true,
+
+      /*  */
+      "rootDir": "src",
+      "outDir": "dist",
+
+      /* path aliases */
+      "baseUrl": ".",
+      "paths": {
+         "@/*": ["src/*"],
+         "@modules/*": ["src/modules/*"],
+      }
+   },
+   "include": ["src/**/*"],
+   "exclude": ["node_modules", "**/*.test.ts"]
+}
